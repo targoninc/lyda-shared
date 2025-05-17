@@ -2,6 +2,7 @@ import {User} from "./User.js";
 import {Track} from "./Track.js";
 
 export interface Comment {
+    comments?: Comment[];
     user?: User;
     track?: Track;
     canEdit?: boolean;
