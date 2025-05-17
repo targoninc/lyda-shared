@@ -1,5 +1,5 @@
 {
-  "name": "@org/repo",
+  "name": "@targoninc/lyda-shared",
   "type": "module",
   "version": "0.0.2",
   "main": "dist/index.js",
@@ -7,16 +7,22 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/org/repo.git"
+    "url": "git+https://github.com/targoninc/lyda-shared.git"
   },
   "scripts": {
     "build": "bun build ./src/index.ts --outdir ./dist --target bun --format esm && tsc",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "bun run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@targoninc/jess": "^0.0.11",
+    "@targoninc/ts-search": "^0.0.5"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "bun-plugin-dtsx": "^0.21.9"
