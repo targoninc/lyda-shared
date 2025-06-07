@@ -25,6 +25,7 @@
     "@targoninc/ts-search": "^0.0.5"
   },
   "devDependencies": {
+    "@passwordless-id/webauthn": "^2.3.0",
     "@types/bun": "latest",
     "bun-plugin-dtsx": "^0.21.9"
   },

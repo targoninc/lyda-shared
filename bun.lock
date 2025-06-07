@@ -7,6 +7,7 @@
         "@targoninc/ts-search": "^0.0.5",
       },
       "devDependencies": {
+        "@passwordless-id/webauthn": "^2.3.0",
         "@types/bun": "latest",
         "bun-plugin-dtsx": "^0.21.9",
       },
@@ -16,6 +17,8 @@
     },
   },
   "packages": {
+    "@passwordless-id/webauthn": ["@passwordless-id/webauthn@2.3.0", "", {}, "sha512-D3+ncFPHutmwYVI84+5aQrFa42rRu+Rg0/Pxw8fjfyhMEydmeWIwp7kNONdZpqBjzXI1IMcGUBuJy931aE/Y7Q=="],
+
     "@stacksjs/dtsx": ["@stacksjs/dtsx@0.8.0", "", { "bin": { "dtsx": "dist/cli.js" } }, "sha512-x7HxXTRZTrwvpSTZlxL5lu4F1sFHnDynAQBNr3UIkrctCKQbe7dYM21SfEozBx5+qBk+Mv1yZUvrUL/aA1bQwg=="],
 
     "@targoninc/jess": ["@targoninc/jess@0.0.11", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-ygLvnKGssZUPTPH5viYnOUnuPgSUO9kHt6KUmnuJ1tmMOmA6J06uUr5anM+eHsHQb99Eju2u1+DD9r6azxSG5w=="],
