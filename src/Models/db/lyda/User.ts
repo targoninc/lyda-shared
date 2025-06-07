@@ -6,6 +6,8 @@ import {Subscription} from "../finance/Subscription.js";
 import {UserEmail} from "./UserEmail.js";
 import {Permission} from "./Permission.js";
 import {Entity} from "@targoninc/ts-search";
+import {UserTotp} from "./UserTotp.ts";
+import {PublicKey} from "./PublicKey.ts";
 
 export interface User extends Entity {
     permissions?: Permission[];
@@ -15,6 +17,8 @@ export interface User extends Entity {
     userBadges?: UserBadge[];
     follows?: Follow[];
     following?: Follow[];
+    totp?: UserTotp[];
+    public_keys?: PublicKey[];
     id: number;
     username: string;
     mfa_enabled: boolean;
