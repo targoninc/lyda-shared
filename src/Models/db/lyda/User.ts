@@ -39,4 +39,6 @@ export interface User extends Entity {
     ip: string;
     has_avatar: boolean;
     has_banner: boolean;
+    email_mfa_code: string;
+    passkey_user_id: string;
 }
