@@ -1,6 +1,8 @@
+import {BoxPlotValues} from "./BoxPlotValues.ts";
+
 export interface RoyaltyInfo {
     personal: {
-        trackRoyaltyValues: any;
+        trackRoyaltyValues: BoxPlotValues;
         meanTrackRoyalty: number;
         paidTotal: number;
         available: number,
@@ -11,6 +13,6 @@ export interface RoyaltyInfo {
         meanTrackRoyalty: number;
         paidTotal: number,
         totalRoyalties: number,
-        trackRoyaltyValues: any;
+        trackRoyaltyValues: BoxPlotValues;
     }
 }
