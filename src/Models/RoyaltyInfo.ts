@@ -14,5 +14,11 @@ export interface RoyaltyInfo {
         paidTotal: number,
         totalRoyalties: number,
         trackRoyaltyValues: BoxPlotValues;
+        counts: {
+            users: number;
+            tracks: number;
+            albums: number;
+            playlists: number;
+        }
     }
 }
