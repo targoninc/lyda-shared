@@ -19,6 +19,7 @@ export interface User extends Entity {
     following?: Follow[];
     totp?: UserTotp[];
     public_keys?: PublicKey[];
+    giftedSubscriptions?: Subscription[];
     id: number;
     username: string;
     mfa_enabled: boolean;
