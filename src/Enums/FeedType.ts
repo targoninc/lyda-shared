@@ -4,4 +4,5 @@ export enum FeedType {
     history = "history",
     autoQueue = "autoQueue",
     profileTracks = "profileTracks",
+    profileReposts = "profileReposts",
 }
