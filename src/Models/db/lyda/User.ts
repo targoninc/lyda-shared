@@ -9,6 +9,13 @@ import {Entity} from "@targoninc/ts-search";
 import {UserTotp} from "./UserTotp.ts";
 import {PublicKey} from "./PublicKey.ts";
 
+/**
+ * Represents a user entity with associated attributes and relationships.
+ *
+ * The `User` interface extends the `Entity` interface from our search library and defines additional properties
+ * related to the user, including information about permissions, subscriptions, settings, badges,
+ * security credentials, and activity logs.
+ */
 export interface User extends Entity {
     permissions?: Permission[];
     subscription?: Subscription;
