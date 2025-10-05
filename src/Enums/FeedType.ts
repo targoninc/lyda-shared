@@ -5,4 +5,5 @@ export enum FeedType {
     autoQueue = "autoQueue",
     profileTracks = "profileTracks",
     profileReposts = "profileReposts",
+    likedTracks = "likedTracks",
 }
