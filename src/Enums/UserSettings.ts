@@ -9,4 +9,5 @@ export const UserSettings = {
     theme: "theme",
     streamingQuality: "streamingQuality",
     playFromAutoQueue: "playFromAutoQueue",
+    language: "language",
 };
