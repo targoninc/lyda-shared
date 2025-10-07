@@ -11,4 +11,5 @@ export enum UserSettings {
     playFromAutoQueue = "playFromAutoQueue",
     language = "language",
     volume = "volume",
+    loopMode = "loopMode",
 }
