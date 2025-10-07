@@ -10,4 +10,5 @@ export enum UserSettings {
     streamingQuality = "streamingQuality",
     playFromAutoQueue = "playFromAutoQueue",
     language = "language",
+    volume = "volume",
 }
