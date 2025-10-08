@@ -12,4 +12,5 @@ export enum UserSettings {
     language = "language",
     volume = "volume",
     loopMode = "loopMode",
+    lastTrackId = "lastTrackId",
 }
