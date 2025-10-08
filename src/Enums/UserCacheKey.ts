@@ -3,5 +3,5 @@ export enum UserCacheKey {
     loopMode = "loopMode",
     lastTrackId = "lastTrackId",
     lastTrackPosition = "lastTrackPosition",
-    playingFromId = "playingFromId",
+    playingFrom = "playingFrom",
 }
