@@ -13,4 +13,6 @@ export enum UserSettings {
     volume = "volume",
     loopMode = "loopMode",
     lastTrackId = "lastTrackId",
+    lastTrackPosition = "lastTrackPosition",
+    playingFromId = "playingFromId",
 }
