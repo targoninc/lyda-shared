@@ -10,9 +10,4 @@ export enum UserSettings {
     streamingQuality = "streamingQuality",
     playFromAutoQueue = "playFromAutoQueue",
     language = "language",
-    volume = "volume",
-    loopMode = "loopMode",
-    lastTrackId = "lastTrackId",
-    lastTrackPosition = "lastTrackPosition",
-    playingFromId = "playingFromId",
 }
