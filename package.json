@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "@targoninc/jess": "^0.0.11",
-    "@targoninc/ts-search": "^0.0.5"
+    "@targoninc/ts-search": "^0.0.5",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@passwordless-id/webauthn": "^2.3.0",
