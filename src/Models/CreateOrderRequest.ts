@@ -6,7 +6,6 @@ export const CreateOrderRequest = z.object({
     paymentProvider: z.enum(PaymentProvider),
     orderId: z.string(),
     entityId: z.number(),
-    priceInUsd: z.number().min(0.01).max(100).optional(),
 });
 
 export type CreateOrderRequest = z.infer<typeof CreateOrderRequest>;
