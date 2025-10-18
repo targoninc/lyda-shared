@@ -6,4 +6,5 @@ export enum FeedType {
     profileTracks = "profileTracks",
     profileReposts = "profileReposts",
     likedTracks = "likedTracks",
+    boughtTracks = "boughtTracks",
 }
