@@ -7,5 +7,5 @@ export interface Order {
     provider_status: string;
     status: string;
     user_id: string;
-    item_id: string;
+    item_id: number;
 }
