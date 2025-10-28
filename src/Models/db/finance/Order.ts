@@ -5,7 +5,11 @@ export interface Order {
     provider_order_id: string;
     provider_status: string;
     status: string;
-    amount_ct: number;
+    total: number;
+    fees: number;
+    taxes: number;
+    received: number;
+    refunded: number;
     user_id: string;
     item_id: number;
     created_at: Date;

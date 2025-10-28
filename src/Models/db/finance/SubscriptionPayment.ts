@@ -9,6 +9,8 @@ export interface SubscriptionPayment {
     external_id: string;
     total: number;
     fees: number;
+    taxes: number;
     received: number;
+    refunded: number;
     succeeded: boolean;
 }
