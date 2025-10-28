@@ -1,4 +1,4 @@
-export interface PaymentHistory {
+export interface SubscriptionPayment {
     id: number;
     received_at: Date;
     user_id: number;

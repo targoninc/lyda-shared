@@ -8,4 +8,6 @@ export interface Order {
     status: string;
     user_id: string;
     item_id: number;
+    created_at: Date;
+    updated_at: Date;
 }
