@@ -6,6 +6,7 @@ export interface Transaction {
     currency: string;
     item_id?: number;
     item_name?: string;
+    item_type?: string;
     direction: "in" | "out";
     date: Date;
 }
