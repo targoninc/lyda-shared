@@ -10,6 +10,7 @@ export interface Order {
     taxes: number;
     received: number;
     refunded: number;
+    currency: string;
     user_id: string;
     item_id: number;
     created_at: Date;
