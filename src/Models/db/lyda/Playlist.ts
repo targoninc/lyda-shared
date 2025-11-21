@@ -6,6 +6,7 @@ import {InteractionMetadata} from "../../InteractionMetadata.ts";
 import {TrackLike} from "./TrackLike.ts";
 import {Repost} from "./Repost.ts";
 import {Comment} from "./Comment.ts";
+import {Visibility} from "../../../Enums/Visibility.ts";
 
 export interface Playlist extends Entity {
     tracks?: PlaylistTrack[];
@@ -16,7 +17,7 @@ export interface Playlist extends Entity {
     description: string;
     created_at: Date;
     updated_at: Date;
-    visibility: string;
+    visibility: Visibility;
     has_cover: boolean;
     secretcode: string;
     likes?: InteractionMetadata<TrackLike>;

@@ -3,6 +3,7 @@ import {AlbumTrack} from "./AlbumTrack.js";
 import {Entity} from "@targoninc/ts-search";
 import {InteractionMetadata} from "../../InteractionMetadata.ts";
 import {TrackLike} from "./TrackLike.ts";
+import {Visibility} from "../../../Enums/Visibility.ts";
 
 export interface Album extends Entity {
     tracks?: AlbumTrack[];
@@ -15,7 +16,7 @@ export interface Album extends Entity {
     release_date: Date;
     created_at: Date;
     updated_at: Date;
-    visibility: string;
+    visibility: Visibility;
     secretcode: string;
     has_cover: boolean;
     price: number;

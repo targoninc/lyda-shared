@@ -8,5 +8,5 @@ export interface PlayingFrom {
     type: "album" | "playlist" | string;
     name: string;
     id?: number;
-    entity?: Album|Playlist;
+    entity?: Album | Playlist;
 }
