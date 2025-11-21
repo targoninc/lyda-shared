@@ -8,6 +8,7 @@ import {User} from "./User.js";
 import {Repost} from "./Repost.js";
 import {InteractionMetadata} from "../../InteractionMetadata.ts";
 import {Entity} from "@targoninc/ts-search";
+import {Visibility} from "../../../Enums/Visibility.ts";
 
 export interface Track extends Entity {
     repost_user_id?: number;
@@ -22,7 +23,7 @@ export interface Track extends Entity {
     isrc: string;
     artistname: string;
     upc: string;
-    visibility: string;
+    visibility: Visibility;
     credits: string;
     loudness_data: string;
     genre: string;
