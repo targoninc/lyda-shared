@@ -7,6 +7,6 @@ import {Playlist} from "./db/lyda/Playlist.ts";
 export interface PlayingFrom {
     type: "album" | "playlist" | string;
     name: string;
-    id: number;
+    id?: number;
     entity?: Album|Playlist;
 }
