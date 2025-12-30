@@ -12,5 +12,6 @@ export interface SubscriptionPayment {
     taxes: number;
     received: number;
     refunded: number;
+    refund_id: number | null;
     succeeded: boolean;
 }
