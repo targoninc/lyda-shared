@@ -13,6 +13,7 @@ import {Visibility} from "../../../Enums/Visibility.ts";
 export interface Track extends Entity {
     repost_user_id?: number;
     repost?: Repost;
+    collab?: TrackCollaborator,
     user?: User;
     playlists?: Playlist[];
     albums?: Album[];
