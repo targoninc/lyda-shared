@@ -9,4 +9,7 @@ export interface Transaction {
     item_type?: string;
     direction: "in" | "out";
     date: Date;
+    refunded: number;
+    refundReason?: string;
+    refundStatus?: string;
 }
