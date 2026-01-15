@@ -41,6 +41,7 @@ export interface Track extends Entity {
     price: number;
     has_cover: boolean;
     processed: boolean;
+    file_hash?: string;
     likes?: InteractionMetadata<TrackLike>;
     reposts?: InteractionMetadata<Repost>;
     comments?: InteractionMetadata<Comment>;
