@@ -42,6 +42,7 @@ export interface Track extends Entity {
     has_cover: boolean;
     processed: boolean;
     file_hash?: string;
+    file_fingerprint?: string;
     likes?: InteractionMetadata<TrackLike>;
     reposts?: InteractionMetadata<Repost>;
     comments?: InteractionMetadata<Comment>;
