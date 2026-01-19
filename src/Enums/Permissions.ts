@@ -12,4 +12,6 @@ export enum Permissions {
     canTriggerEventHandling = "canTriggerEventHandling",
     canSetPermissions = "canSetPermissions",
     canViewPayments = "canViewPayments",
+    canRefund = "canRefund",
+    canRetriggerContentID = "canRetriggerContentID",
 }
