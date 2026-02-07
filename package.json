@@ -1,7 +1,7 @@
 {
   "name": "@targoninc/lyda-shared",
   "type": "module",
-  "version": "0.0.74",
+  "version": "0.0.75",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
