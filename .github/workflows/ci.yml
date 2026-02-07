@@ -10,6 +10,10 @@ on:
       - 'package-lock.json'
       - 'bun.lock'
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
 jobs:
   build-and-release:
     name: Build, Version Bump, and Release
