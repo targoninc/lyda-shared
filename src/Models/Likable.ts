@@ -1,6 +1,6 @@
-import {TrackLike} from "./db/lyda/TrackLike.ts";
-import {AlbumLike} from "./db/lyda/AlbumLike.ts";
-import {PlaylistLike} from "./db/lyda/PlaylistLike.ts";
+import {TrackLike} from "./db/lyda/TrackLike";
+import {AlbumLike} from "./db/lyda/AlbumLike";
+import {PlaylistLike} from "./db/lyda/PlaylistLike";
 
 /**
  * A generic interface for an entity that has an array of likes attached to it

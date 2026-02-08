@@ -1,4 +1,4 @@
-import {Track} from "./Track.js";
+import {Track} from "./Track";
 
 export interface AlbumTrack {
     track?: Track;

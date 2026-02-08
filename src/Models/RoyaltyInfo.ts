@@ -1,4 +1,4 @@
-import {BoxPlotValues} from "./BoxPlotValues.ts";
+import {BoxPlotValues} from "./BoxPlotValues";
 
 export interface RoyaltyInfo {
     personal: {

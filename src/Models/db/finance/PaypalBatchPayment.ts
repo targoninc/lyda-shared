@@ -1,4 +1,4 @@
-import {PaypalBatchStatus} from "../../../Enums/PaypalBatchStatus.ts";
+import {PaypalBatchStatus} from "../../../Enums/PaypalBatchStatus";
 
 export interface PaypalBatchPayment {
     id: number;

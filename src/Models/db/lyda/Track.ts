@@ -1,19 +1,19 @@
-import {TrackLike} from "./TrackLike.js";
-import {Album} from "./Album.js";
-import {Playlist} from "./Playlist.js";
-import {Notification} from "./Notification.js";
-import {Comment} from "./Comment.js";
-import {TrackCollaborator} from "./TrackCollaborator.js";
-import {User} from "./User.js";
-import {Repost} from "./Repost.js";
-import {InteractionMetadata} from "../../InteractionMetadata.ts";
+import {TrackLike} from "./TrackLike";
+import {Album} from "./Album";
+import {Playlist} from "./Playlist";
+import {Notification} from "./Notification";
+import {Comment} from "./Comment";
+import {TrackCollaborator} from "./TrackCollaborator";
+import {User} from "./User";
+import {Repost} from "./Repost";
+import {InteractionMetadata} from "../../InteractionMetadata";
 import {Entity} from "@targoninc/ts-search";
-import {Visibility} from "../../../Enums/Visibility.ts";
+import {Visibility} from "../../../Enums/Visibility";
 
 export interface Track extends Entity {
     repost_user_id?: number;
     repost?: Repost;
-    collab?: TrackCollaborator,
+    collab?: TrackCollaborator;
     user?: User;
     playlists?: Playlist[];
     albums?: Album[];
@@ -47,3 +47,4 @@ export interface Track extends Entity {
     reposts?: InteractionMetadata<Repost>;
     comments?: InteractionMetadata<Comment>;
 }
+

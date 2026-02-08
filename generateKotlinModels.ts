@@ -49,6 +49,21 @@ async function convertOne(tsFile: string): Promise<void> {
     const outFile = outPathForInputTs(tsFile);
     await mkdir(dirname(outFile), { recursive: true });
 
+    // Check if file uses zod or other unsupported features
+    try {
+        const content = await readFile(tsFile, "utf-8");
+        if (content.includes('from "zod"') || content.includes("'zod'")) {
+            console.log(`Skipping ${tsFile} (uses zod)`);
+            return;
+        }
+        if (content.includes('extends Entity')) {
+            console.log(`Skipping ${tsFile} (extends Entity - not supported by quicktype)`);
+            return;
+        }
+    } catch (e) {
+        console.error(`Could not read ${tsFile} for skip check`);
+    }
+
     const args = [
         tsFile,
         "-o",

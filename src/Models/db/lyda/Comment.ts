@@ -1,5 +1,5 @@
-import {User} from "./User.js";
-import {Track} from "./Track.js";
+import {User} from "./User";
+import {Track} from "./Track";
 
 export interface Comment {
     comments?: Comment[];

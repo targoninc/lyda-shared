@@ -1,4 +1,4 @@
-import {SubscriptionStatus} from "../../../Enums/SubscriptionStatus.ts";
+import {SubscriptionStatus} from "../../../Enums/SubscriptionStatus";
 
 export interface Subscription {
     id: number;

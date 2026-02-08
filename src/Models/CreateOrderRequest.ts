@@ -1,5 +1,5 @@
 import * as z from "zod";
-import {PaymentProvider} from "../Enums/PaymentProvider.ts";
+import {PaymentProvider} from "../Enums/PaymentProvider";
 
 export const CreateOrderRequest = z.object({
     type: z.enum(["album", "track"]),
@@ -9,3 +9,4 @@ export const CreateOrderRequest = z.object({
 });
 
 export type CreateOrderRequest = z.infer<typeof CreateOrderRequest>;
+

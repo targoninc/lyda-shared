@@ -1,4 +1,4 @@
-import {NotificationReferenceType} from "../Enums/NotificationReferenceType.ts";
+import {NotificationReferenceType} from "../Enums/NotificationReferenceType";
 
 /**
  * Represents a reference for a notification.

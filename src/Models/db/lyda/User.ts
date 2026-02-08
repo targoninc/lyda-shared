@@ -1,13 +1,13 @@
-import {Follow} from "./Follow.js";
-import {UserBadge} from "./UserBadge.js";
-import {Usersetting} from "./Usersetting.js";
-import {Badge} from "./Badge.js";
-import {Subscription} from "../finance/Subscription.js";
-import {UserEmail} from "./UserEmail.js";
-import {Permission} from "./Permission.js";
+import {Follow} from "./Follow";
+import {UserBadge} from "./UserBadge";
+import {Usersetting} from "./Usersetting";
+import {Badge} from "./Badge";
+import {Subscription} from "../finance/Subscription";
+import {UserEmail} from "./UserEmail";
+import {Permission} from "./Permission";
 import {Entity} from "@targoninc/ts-search";
-import {UserTotp} from "./UserTotp.ts";
-import {PublicKey} from "./PublicKey.ts";
+import {UserTotp} from "./UserTotp";
+import {PublicKey} from "./PublicKey";
 
 /**
  * Represents a user entity with associated attributes and relationships.

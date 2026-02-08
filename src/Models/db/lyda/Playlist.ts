@@ -1,12 +1,12 @@
-import {User} from "./User.js";
-import {PlaylistLike} from "./PlaylistLike.js";
+import {User} from "./User";
+import {PlaylistLike} from "./PlaylistLike";
 import {Entity} from "@targoninc/ts-search";
-import {PlaylistTrack} from "./PlaylistTrack.ts";
-import {InteractionMetadata} from "../../InteractionMetadata.ts";
-import {TrackLike} from "./TrackLike.ts";
-import {Repost} from "./Repost.ts";
-import {Comment} from "./Comment.ts";
-import {Visibility} from "../../../Enums/Visibility.ts";
+import {PlaylistTrack} from "./PlaylistTrack";
+import {InteractionMetadata} from "../../InteractionMetadata";
+import {TrackLike} from "./TrackLike";
+import {Repost} from "./Repost";
+import {Comment} from "./Comment";
+import {Visibility} from "../../../Enums/Visibility";
 
 export interface Playlist extends Entity {
     tracks?: PlaylistTrack[];

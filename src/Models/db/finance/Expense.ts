@@ -1,5 +1,5 @@
 export interface Expense {
-    id: bigint;
+    id: number;
     year: number;
     month: number;
     day: number;

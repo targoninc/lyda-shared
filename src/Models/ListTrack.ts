@@ -1,4 +1,4 @@
-import {Track} from "./db/lyda/Track.ts";
+import {Track} from "./db/lyda/Track";
 
 /**
  * A generic interface for tracks in lists (e.g. albums or playlists)

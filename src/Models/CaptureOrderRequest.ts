@@ -5,3 +5,4 @@ export const CaptureOrderRequest = z.object({
 });
 
 export type CaptureOrderRequest = z.infer<typeof CaptureOrderRequest>;
+

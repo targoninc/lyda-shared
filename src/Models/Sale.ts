@@ -1,4 +1,4 @@
-import {User} from "./db/lyda/User.ts";
+import {User} from "./db/lyda/User";
 
 export interface Sale {
     user?: User;

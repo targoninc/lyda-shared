@@ -1,5 +1,5 @@
-import {Statistic} from "./Statistic.js";
-import {ActivityTableName} from "../Enums/ActivityTableName.ts";
+import {Statistic} from "./Statistic";
+import {ActivityTableName} from "../Enums/ActivityTableName";
 
 export interface TypedStatistic {
     type: ActivityTableName;

@@ -1,9 +1,9 @@
-import {User} from "./User.js";
-import {AlbumTrack} from "./AlbumTrack.js";
+import {User} from "./User";
+import {AlbumTrack} from "./AlbumTrack";
 import {Entity} from "@targoninc/ts-search";
-import {InteractionMetadata} from "../../InteractionMetadata.ts";
-import {TrackLike} from "./TrackLike.ts";
-import {Visibility} from "../../../Enums/Visibility.ts";
+import {InteractionMetadata} from "../../InteractionMetadata";
+import {TrackLike} from "./TrackLike";
+import {Visibility} from "../../../Enums/Visibility";
 
 export interface Album extends Entity {
     tracks?: AlbumTrack[];
