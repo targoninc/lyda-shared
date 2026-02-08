@@ -5,14 +5,14 @@ export interface RoyaltyInfo {
         trackRoyaltyValues: BoxPlotValues;
         meanTrackRoyalty: number;
         paidTotal: number;
-        available: number,
-        totalRoyalties: number,
-        paypalMail: string | null,
-    },
+        available: number;
+        totalRoyalties: number;
+        paypalMail: string | null;
+    };
     global: {
         meanTrackRoyalty: number;
-        paidTotal: number,
-        totalRoyalties: number,
+        paidTotal: number;
+        totalRoyalties: number;
         trackRoyaltyValues: BoxPlotValues;
         counts: {
             users: number;

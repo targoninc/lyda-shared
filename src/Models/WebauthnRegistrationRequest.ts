@@ -13,7 +13,7 @@ export interface WebauthnRegistrationRequest {
         };
         authenticatorData: string;
         clientData: string;
-    },
+    };
     challenge: string;
     name: string;
 }

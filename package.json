@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "bun build ./src/index.ts --outdir ./dist --target bun --format esm && tsc",
+    "generate-kt-models": "bun generateKotlinModels.ts",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "bun run build"
   },
