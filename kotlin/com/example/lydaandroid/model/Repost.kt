@@ -1,11 +1,10 @@
 package com.example.lydaandroid.model
 
 import java.math.BigInteger
-import java.util.Date
 
 data class Repost(
-    val track_id: BigInteger,
-    val user_id: BigInteger,
-    val created_at: String,
+    val track_id: BigInteger? = null,
+    val user_id: BigInteger? = null,
+    val created_at: String = "",
     val user: User? = null,
 )
