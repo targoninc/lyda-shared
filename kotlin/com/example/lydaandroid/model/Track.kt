@@ -24,6 +24,8 @@ data class Track(
     val price: Double,
     val has_cover: Boolean,
     val processed: Boolean,
-    val likes: InteractionMetadata<Any>? = null,
+    val likes: InteractionMetadata<TrackLike>? = null,
+    val reposts: InteractionMetadata<Repost>? = null,
+    val comments: InteractionMetadata<Comment>? = null,
     val user: User? = null
 )
