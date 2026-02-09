@@ -1,10 +1,8 @@
 package com.example.lydaandroid.model
 
-import java.util.Date
-
 data class Track(
-    val id: Int,
-    val user_id: Int,
+    val id: Integer? = null,
+    val user_id: Integer? = null,
     val title: String,
     val isrc: String,
     val artistname: String,
@@ -13,17 +11,17 @@ data class Track(
     val credits: String,
     val genre: String,
     val version: String,
-    val length: Double,
+    val length: Integer? = null,
     val description: String,
     val release_date: String,
     val created_at: String,
     val updated_at: String,
-    val plays: Int,
-    val secretcode: String,
-    val monetization: Boolean,
-    val price: Double,
-    val has_cover: Boolean,
-    val processed: Boolean,
+    val plays: Integer? = null,
+    val secretcode: String? = null,
+    val monetization: Integer? = null,
+    val price: Integer? = null,
+    val has_cover: Integer? = null,
+    val processed: Integer? = null,
     val likes: TrackLikeMetadata? = null,
     val reposts: RepostMetadata? = null,
     val comments: CommentMetadata? = null,
