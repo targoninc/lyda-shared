@@ -17,10 +17,4 @@ data class Album(
     val price: Double = 0.0,
     val likes: TrackLikeMetadata? = null,
     val user: User? = null
-) {
-    val visibilityEnum: Visibility
-        get() = when (visibility) {
-            "private" -> Visibility.PRIVATE
-            else -> Visibility.PUBLIC
-        }
-}
+)

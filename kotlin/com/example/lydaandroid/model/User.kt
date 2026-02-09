@@ -5,7 +5,7 @@ data class User(
     val username: String = "",
     val mfa_enabled: Int? = null,
     val displayname: String = "",
-    val description: String = "",
+    val description: String? = null,
     val verified: Int? = null,
     val created_at: String = "",
     val updated_at: String? = null,

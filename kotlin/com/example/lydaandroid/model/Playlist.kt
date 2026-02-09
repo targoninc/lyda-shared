@@ -7,7 +7,7 @@ data class Playlist(
     val description: String = "",
     val created_at: String = "",
     val updated_at: String = "",
-    val visibility: Visibility,
+    val visibility: String? = "public",
     val has_cover: Boolean = false,
     val secretcode: String? = null,
     val user: User? = null,
