@@ -6,6 +6,6 @@ import java.util.Date
 data class Repost(
     val track_id: BigInteger,
     val user_id: BigInteger,
-    val created_at: Date,
+    val created_at: String,
     val user: User? = null,
 )

@@ -1,16 +1,14 @@
 package com.example.lydaandroid.model
 
-import java.util.Date
-
 data class User(
-    val id: Int,
+    val id: Integer? = null,
     val username: String,
-    val mfa_enabled: Boolean,
+    val mfa_enabled: Integer? = null,
     val displayname: String,
     val description: String,
-    val verified: Boolean,
-    val created_at: Date,
-    val updated_at: Date,
-    val has_avatar: Boolean,
-    val has_banner: Boolean
+    val verified: Integer? = null,
+    val created_at: String,
+    val updated_at: String? = null,
+    val has_avatar: Integer? = null,
+    val has_banner: Integer? = null
 )

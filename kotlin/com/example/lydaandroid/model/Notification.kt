@@ -10,6 +10,6 @@ data class Notification(
     val search_key: String,
     val message: String,
     val is_read: Boolean,
-    val created_at: Date,
+    val created_at: String,
     val references: List<NotificationReference>? = null
 )

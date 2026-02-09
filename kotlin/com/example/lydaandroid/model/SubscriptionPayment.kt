@@ -4,7 +4,7 @@ import java.util.Date
 
 data class SubscriptionPayment(
     val id: Int,
-    val received_at: Date,
+    val received_at: String,
     val user_id: Int,
     val product_id: Int,
     val subscription_id: Int,

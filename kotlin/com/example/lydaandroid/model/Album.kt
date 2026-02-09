@@ -8,13 +8,13 @@ data class Album(
     val title: String,
     val description: String,
     val upc: String,
-    val release_date: Date,
-    val created_at: Date,
-    val updated_at: Date,
+    val release_date: String,
+    val created_at: String,
+    val updated_at: String,
     val visibility: Visibility,
     val secretcode: String,
     val has_cover: Boolean,
     val price: Double,
-    val likes: InteractionMetadata<Any>? = null,
+    val likes: TrackLikeMetadata? = null,
     val user: User? = null
 )

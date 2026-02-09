@@ -8,7 +8,7 @@ data class Comment(
     val track_id: Int,
     val user_id: Int,
     val content: String,
-    val created_at: Date,
+    val created_at: String,
     val potentially_harmful: Boolean,
     val hidden: Boolean,
     val comments: List<Comment>? = null,

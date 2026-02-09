@@ -12,7 +12,7 @@ data class Transaction(
     val item_name: String? = null,
     val item_type: String? = null,
     val direction: String, // "in" | "out"
-    val date: Date,
+    val date: String,
     val refunded: Double,
     val refundReason: String? = null,
     val refundStatus: String? = null

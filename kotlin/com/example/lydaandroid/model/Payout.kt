@@ -8,6 +8,6 @@ data class Payout(
     val user_id: Int,
     val amount_ct: Int,
     val status: PaymentStatus,
-    val created_at: Date,
+    val created_at: String,
     val updated_at: Date
 )

@@ -8,8 +8,8 @@ data class TrackCollaborator(
     val type: Int,
     val approved: Boolean,
     val denied: Boolean,
-    val created_at: Date,
-    val updated_at: Date,
+    val created_at: String,
+    val updated_at: String,
     val collab_type: CollaboratorType? = null,
     val track: Track? = null,
     val user: User? = null
