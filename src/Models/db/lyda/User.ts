@@ -39,7 +39,8 @@ export interface User extends Entity {
     verification_status: string;
     created_at: Date;
     updated_at: Date;
-    deleted_at: Date;
+    deleted_at: Date | null;
+    banned_at: Date | null;
     lastlogin?: Date;
     secondlastlogin?: Date;
     password_updated_at: Date;
