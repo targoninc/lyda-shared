@@ -1,13 +1,4 @@
-import {Follow} from "./Follow";
-import {UserBadge} from "./UserBadge";
-import {Usersetting} from "./Usersetting";
-import {Badge} from "./Badge";
-import {Subscription} from "../finance/Subscription";
-import {UserEmail} from "./UserEmail";
-import {Permission} from "./Permission";
 import {Entity} from "@targoninc/ts-search";
-import {UserTotp} from "./UserTotp";
-import {PublicKey} from "./PublicKey";
 
 export interface UserTaxinfo extends Entity {
     user_id: number;
