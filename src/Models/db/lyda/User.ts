@@ -29,7 +29,6 @@ export interface User extends Entity {
     giftedSubscriptions?: Subscription[];
     id: number;
     username: string;
-    mfa_enabled: boolean;
     emails: UserEmail[];
     password_hash: string;
     displayname: string;
