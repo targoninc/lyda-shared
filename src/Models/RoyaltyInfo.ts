@@ -8,6 +8,7 @@ export interface RoyaltyInfo {
         available: number;
         totalRoyalties: number;
         paypalMail: string | null;
+        hasTaxInfo: boolean;
     };
     global: {
         meanTrackRoyalty: number;
