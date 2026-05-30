@@ -9,4 +9,5 @@ export interface PublicKey {
     transports: string;
     created_at: Date;
     updated_at: Date;
+    last_used?: Date;
 }

@@ -6,4 +6,5 @@ export interface UserTotp {
     name: string;
     created_at: Date;
     updated_at: Date;
+    last_used?: Date;
 }
