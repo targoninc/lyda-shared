@@ -9,5 +9,6 @@ export interface PlayingFrom {
     type?: FeedType | "album" | "playlist";
     name: string;
     id?: number;
+    username?: string;
     entity?: Album | Playlist;
 }
