@@ -30,7 +30,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Use Cached node_modules
@@ -66,4 +66,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish To npm
-        run: npm publish --provenance --access public
+        run: npm publish --access public
