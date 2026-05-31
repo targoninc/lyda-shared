@@ -11,4 +11,5 @@ export interface PlayingFrom {
     id?: number;
     username?: string;
     entity?: Album | Playlist;
+    filter?: string;
 }
