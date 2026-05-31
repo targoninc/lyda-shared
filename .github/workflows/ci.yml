@@ -50,34 +50,11 @@ jobs:
       - name: Bump Version
         id: bump-version
         run: |
-          # Get current version from package.json
-          CURRENT_VERSION=$(node -p "require('./package.json').version")
-
-          # Split version into parts
-          IFS='.' read -ra VERSION_PARTS <<< "$CURRENT_VERSION"
-          MAJOR=${VERSION_PARTS[0]}
-          MINOR=${VERSION_PARTS[1]}
-          PATCH=${VERSION_PARTS[2]}
-
-          # Increment patch version
-          NEW_PATCH=$((PATCH + 1))
-          NEW_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
-
-          # Update package.json with new version
-          npm version $NEW_VERSION --no-git-tag-version
-
-          echo "New version: $NEW_VERSION"
-          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
-
-      - name: Commit and Push Changes
-        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git pull
-          git add package.json
-          git commit -m "Bump version to ${{ steps.bump-version.outputs.new_version }}"
-          git tag -a "v${{ steps.bump-version.outputs.new_version }}" -m "Release v${{ steps.bump-version.outputs.new_version }}"
+          npm version patch
           git push --follow-tags
+          echo "new_version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
