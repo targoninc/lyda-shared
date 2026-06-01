@@ -12,4 +12,5 @@ export interface PlayingFrom {
     username?: string;
     entity?: Album | Playlist;
     filter?: string;
+    wip?: string;
 }
