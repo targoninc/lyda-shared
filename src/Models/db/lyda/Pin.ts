@@ -8,6 +8,7 @@ export interface Pin extends Entity {
     user_id: number;
     entity_type: string;
     entity_id: number;
+    sort_order: number;
     created_at: Date;
     updated_at: Date;
     track?: Track;
