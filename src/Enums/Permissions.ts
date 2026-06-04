@@ -14,4 +14,5 @@ export enum Permissions {
     canViewPayments = "canViewPayments",
     canRefund = "canRefund",
     canRetriggerContentID = "canRetriggerContentID",
+    canReadIpLogs = "canReadIpLogs",
 }
