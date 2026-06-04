@@ -6,6 +6,7 @@ export enum UserSettings {
     notificationLike = "notification_like",
     notificationRepost = "notification_repost",
     notificationSale = "notification_sale",
+    notificationTrackDeleted = "notification_track_deleted",
     paypalMail = "paypalMail",
     publicLikes = "publicLikes",
     theme = "theme",
