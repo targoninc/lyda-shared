@@ -21,4 +21,5 @@ export interface Comment {
     created_at: Date;
     potentially_harmful: boolean;
     hidden: boolean;
+    parent_chain?: Comment[];
 }
