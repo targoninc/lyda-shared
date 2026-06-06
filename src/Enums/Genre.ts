@@ -568,13 +568,3 @@ export const DISCOGS_PARENT_GENRES = [
 ] as const;
 
 export type DiscogsParentGenre = typeof DISCOGS_PARENT_GENRES[number];
-
-export function getParentGenre(genre: Genre): DiscogsParentGenre {
-    const prefix = genre.split("---")[0];
-    return prefix as DiscogsParentGenre;
-}
-
-export function getSubgenre(genre: Genre): string {
-    const parts = genre.split("---");
-    return parts.length > 1 ? parts[1].replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) : genre;
-}
