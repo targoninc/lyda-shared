@@ -28,7 +28,7 @@ export const GenreByParent: Record<DiscogsParentGenre, Genre[]> = DISCOGS_PARENT
     const prefix = PARENT_PREFIXES[parent];
     acc[parent] = Object.values(Genre)
         .filter(g => g.startsWith(prefix + "---"))
-        .sort((a, b) => a.split("---")[1].localeCompare(b.split("---")[1]));
+        .sort((a, b) => (a.split("---")[1] ?? "").localeCompare(b.split("---")[1] ?? ""));
     return acc;
 }, {} as Record<DiscogsParentGenre, Genre[]>);
 
@@ -45,7 +45,7 @@ export function getParentGenre(genre: Genre): DiscogsParentGenre {
 
 export function getSubgenreDisplay(genre: Genre): string {
     const parts = genre.split("---");
-    if (parts.length > 1) {
+    if (parts.length > 1 && parts[1]) {
         return parts[1]
             .replace(/-/g, " ")
             .replace(/&/g, "&")
