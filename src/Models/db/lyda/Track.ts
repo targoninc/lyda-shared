@@ -44,6 +44,9 @@ export interface Track extends Entity {
     wip: boolean;
     file_hash?: string;
     file_fingerprint?: string;
+    lyrics_plain_text?: string | null;
+    lyrics_timed_file?: string | null;
+    lyrics_timed_format?: string | null;
     likes?: InteractionMetadata<TrackLike>;
     reposts?: InteractionMetadata<Repost>;
     comments?: InteractionMetadata<Comment>;

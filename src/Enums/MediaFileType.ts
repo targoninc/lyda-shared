@@ -5,4 +5,5 @@ export enum MediaFileType {
     playlistCover = "playlistCover",
     userAvatar = "userAvatar",
     userBanner = "userBanner",
+    lyrics = "lyrics",
 }
