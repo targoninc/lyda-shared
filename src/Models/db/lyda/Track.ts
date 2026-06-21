@@ -28,8 +28,6 @@ export interface Track extends Entity {
     credits: string;
     loudness_data: string;
     genre: string;
-    version: string;
-    versionid: number;
     length: number;
     description: string;
     release_date: Date;
