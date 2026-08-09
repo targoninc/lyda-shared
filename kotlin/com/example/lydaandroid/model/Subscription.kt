@@ -5,7 +5,7 @@ import java.util.Date
 data class Subscription(
     val id: Int,
     val user_id: Int,
-    val subscription_id: Int,
+    val available_subscription_id: Int,
     val status: SubscriptionStatus,
     val created_at: String,
     val updated_at: String,

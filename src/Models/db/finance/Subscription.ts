@@ -3,7 +3,7 @@ import {SubscriptionStatus} from "../../../Enums/SubscriptionStatus";
 export interface Subscription {
     id: number;
     user_id: number;
-    subscription_id: number;
+    available_subscription_id: number;
     status: SubscriptionStatus;
     created_at: Date;
     updated_at: Date;
