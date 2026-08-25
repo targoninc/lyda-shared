@@ -10,4 +10,3 @@ export const CreateOrderRequest = z.object({
 });
 
 export type CreateOrderRequest = z.infer<typeof CreateOrderRequest>;
-
