@@ -40,6 +40,7 @@ export interface Track extends Entity {
     has_cover: boolean;
     processed: boolean;
     wip: boolean;
+    free_download: boolean;
     file_hash?: string;
     file_fingerprint?: string;
     lyrics_plain_text?: string | null;
