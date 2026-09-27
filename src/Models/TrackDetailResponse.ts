@@ -8,6 +8,7 @@ export interface TrackDetailResponse {
     canEdit: boolean;
     canDownload: boolean;
     canBuy: boolean;
+    bought: boolean;
     versions: TrackVersion[];
     latestVersion: number | undefined;
 }
