@@ -3,6 +3,7 @@ import {Entity} from "@targoninc/ts-search";
 export interface TrackVersion extends Entity {
     track_id: number;
     index: number;
+    order: number;
     name: string | null;
     loudness_data: string;
     processed: boolean;
