@@ -48,6 +48,7 @@ export interface Track extends Entity {
     lyrics_timed_format?: string | null;
     ddex_delivery_id?: number | null;
     ddex_approval?: string | null;
+    ddex_resource_reference?: string | null;
     likes?: InteractionMetadata<TrackLike>;
     reposts?: InteractionMetadata<Repost>;
     comments?: InteractionMetadata<Comment>;
