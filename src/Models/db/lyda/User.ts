@@ -49,5 +49,5 @@ export interface User extends Entity {
     has_banner: boolean;
     email_mfa_code: string;
     passkey_user_id: string;
-    ddex_created: boolean;
+    ddex_delivery_id: number | null;
 }
