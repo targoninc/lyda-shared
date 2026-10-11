@@ -20,6 +20,8 @@ export interface Album extends Entity {
     secretcode: string;
     has_cover: boolean;
     price: number;
+    ddex_delivery_id: number | null;
+    ddex_approval: string | null;
     likes?: InteractionMetadata<TrackLike>;
     /*reposts?: InteractionMetadata<Repost>;
     comments?: InteractionMetadata<Comment>;*/
