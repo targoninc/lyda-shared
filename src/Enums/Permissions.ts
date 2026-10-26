@@ -17,4 +17,5 @@ export enum Permissions {
     canReadIpLogs = "canReadIpLogs",
     canViewClientErrors = "canViewClientErrors",
     canViewDeliveries = "canViewDeliveries",
+    canViewGenreClusters = "canViewGenreClusters",
 }
