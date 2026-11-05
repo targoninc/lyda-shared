@@ -10,7 +10,6 @@ export enum UserSettings {
     notificationNewPlaylist = "notification_new_playlist",
     notificationTrackPublished = "notification_track_published",
     notificationFollowedRepost = "notification_followed_repost",
-    notificationFollowedRepost = "notification_followed_repost",
     notificationRepost = "notification_repost",
     notificationSale = "notification_sale",
     notificationTrackDeleted = "notification_track_deleted",
