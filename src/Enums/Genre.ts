@@ -518,6 +518,7 @@ export enum Genre {
     ROCK_ROCK_ROLL = "rock---rock-&-roll",
     ROCK_ROCK_OPERA = "rock---rock-opera",
     ROCK_ROCKABILLY = "rock---rockabilly",
+    ROCK_SCREAMO = "rock---screamo",
     ROCK_SHOEGAZE = "rock---shoegaze",
     ROCK_SKA = "rock---ska",
     ROCK_SKIFFLE = "rock---skiffle",
