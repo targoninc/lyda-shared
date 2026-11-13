@@ -49,7 +49,8 @@ export function getSubgenreDisplay(genre: Genre): string {
         return parts[1]
             .replace(/-/g, " ")
             .replace(/&/g, "&")
-            .replace(/\b\w/g, l => l.toUpperCase());
+            .replace(/\b\w/g, l => l.toUpperCase())
+            .replace(/\bUk\b/g, "UK");
     }
     return genre
         .replace(/-/g, " ")
