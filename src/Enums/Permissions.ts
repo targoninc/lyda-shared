@@ -8,6 +8,7 @@ export enum Permissions {
     canCalculateRoyalties = 'canCalculateRoyalties',
     canVerifyUsers = 'canVerifyUsers',
     canViewLogs = 'canViewLogs',
+    canViewJobs = 'canViewJobs',
     canViewActionLogs = 'canViewActionLogs',
     canTriggerEventHandling = "canTriggerEventHandling",
     canSetPermissions = "canSetPermissions",
