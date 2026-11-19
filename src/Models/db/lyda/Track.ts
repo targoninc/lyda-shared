@@ -23,6 +23,7 @@ export interface Track extends Entity {
     title: string;
     isrc: string;
     artistname: string;
+    visual_artist: string;
     upc: string;
     visibility: Visibility;
     credits: string;

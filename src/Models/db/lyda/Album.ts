@@ -11,6 +11,7 @@ export interface Album extends Entity {
     id: number;
     user_id: number;
     title: string;
+    visual_artist: string;
     description: string;
     upc: string;
     release_date: Date;
